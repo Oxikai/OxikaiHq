@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="CSS/main.css" rel="stylesheet">
+        <link href="../CSS/main.css" rel="stylesheet">
         <title>Oxikai</title>
-        <script src="Scripts/mediareel.js" defer></script>
     </head>
 
     <body>
         <nav>
             <a href="index.html"><div class="activeLink"><p>Home</p></div></a>
-            <a href="HTML/downloadibles.html"><div><p>Downloadibles</p></div></a>
+            <a href="downloadibles.html"><div><p>Downloadibles</p></div></a>
             <div style="display: none;"><p>Sign In</p></div>
             <div style="display: none;" onclick="signUp('User123', '123', '456@gmail.com')"><p>Sign Up</p></div>
         </nav>
@@ -47,20 +46,6 @@
             <br>
 
             <p>What are you still doing here? Go on, there's more of the website to explore you know... Well scince you're here, you might as well enjoy the media reel</p>
-            <div id="mediareel">
-                <img id="arrowLeft" src="IMG/arrow_left.png" width="50px" onclick="imgscroll((IMAGENUM -= 1))">
-                <img src="IMG/1.png" alt="Media Reel Image" id="ReelIMG">
-                <h2 id="cover" onclick="enlargeIMG(IMAGENUM);">Click To Enlarge</h2>
-                <img id="arrowRight" src="IMG/arrow_right.png" width="50px" onclick="imgscroll((IMAGENUM += 1))">
-                <p id="mediaIMGEx">The newest Alfred update. Now with a "go to" command, which takes you directly to website url's.</p>
-            </div>
-            <div id="enlarged">
-                
-                <img src="IMG/" width="800px" height="450px" style="display: none">
-                <img src="IMG/XButton.png" width="50px" id="XButton" onclick="closeEnlarge();">
-                
-                
-            </div>
         </main>
 
         <footer>
