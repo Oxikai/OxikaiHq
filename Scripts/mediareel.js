@@ -10,12 +10,29 @@ function closeEnlarge() {
     document.getElementById("enlarged").style = "background-color: rgba(100, 100, 100, 0); position: fixed; left:0%; top:23%;";
 }
 
+function imgscrollLeft(IMAGENUM) {
+    IMAGENUM -= 1;
+    imgscroll(IMAGENUM);
+}
+
+function imgscrollRight(IMAGENUM) {
+    IMAGENUM += 1;
+    imgscroll(IMAGENUM);
+}
+
 function imgscroll(IMAGENUM) {
-    if(IMAGENUM > 3) {
-        IMAGENUM = 1;
-    } else if (IMAGENUM < 1) {
-        IMAGENUM = 3;
+    console.log(IMAGENUM);
+    if(IMAGENUM > 2) {
+        document.getElementById("arrowRight").style="visibility: hidden";
+    } else if (IMAGENUM < 2) {
+        document.getElementById("arrowLeft").style="visibility: hidden";
     }
+    else if (IMAGENUM != 1 && IMAGENUM != 3) {
+        document.getElementById("arrowLeft").style="visibility: visible";
+        document.getElementById("arrowRight").style="visibility: visible";
+    }
+
+    console.log(IMAGENUM);
 
     if (IMAGENUM == 1) {
         document.getElementById("mediaIMGEx").innerText = 'The newest Alfred update. Now with a "go to" command, which takes you directly to website url\'s.';
@@ -28,4 +45,5 @@ function imgscroll(IMAGENUM) {
     }
 
     document.getElementById("ReelIMG").outerHTML = `<img src="IMG/${IMAGENUM}.png" alt="Media Reel Image" id="ReelIMG">`;
+    IMAGENUM = IMAGENUM;
 }
