@@ -1,13 +1,13 @@
 html {
-    background-color: black;
+    background-color: rgb(212, 182, 126);
 }
 
 body {
     border: thin rgba(0, 0, 0, 0) solid;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    background-color: black;
-    color:rgba(255, 119, 0, 1);
+    background-color: rgb(212, 182, 126);
+    color:rgb(0, 255,150);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -18,17 +18,24 @@ main {
 }
 
 
+#halve {
+    background-color:rgb(255, 255, 255);
+    width: 100%;
+    color: rgb(0, 68, 255);
+}
+
+
 footer {
     background-color: rgb(0, 0, 0);
     padding: 0px 10px;
     display: flex;
     border: thin rgba(0, 0, 0, 0) solid;
-    border-radius: 0px 0px 30px 30px;
+    border-radius: 0px 20px 0px 20px;
     transition: background-color 0.5s;
 }
 
 footer:hover {
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(14, 14, 14);
 }
 
 footer div {
@@ -40,7 +47,7 @@ footer div {
 
 footer h4 {
     margin-top: 0px;
-    border-bottom:rgba(255, 119, 0, 1) thin solid;
+    border-bottom:rgba(0, 255, 0, 1) thin solid;
     padding: 2px 10px 10px 10px;
 }
 
@@ -58,7 +65,7 @@ footer a:hover {
 .title {
     text-align: center;
     font-size: 4em;
-    color: rgba(255, 119, 0, 1);
+    color: rgb(0, 255, 170);
 }
 
 
@@ -70,12 +77,12 @@ nav {
     width: 100%;
     border:rgba(0, 0, 0, 0) thin solid;
     border-radius: 30px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(212, 182, 126);
 }
 
 .activeLink {
     text-decoration: overline;
-    text-decoration-color: rgba(255, 119, 0, 1);
+    text-decoration-color: rgba(255, 119, 170, 1);
 }
 
 nav ul {
@@ -83,7 +90,7 @@ nav ul {
 }
 
 nav div {
-    color: rgba(255, 119, 0, 1);
+    color: rgb(0, 255,150);
     width: 120px;
     background-color: rgba(38, 38, 38, 0);
     text-align: center;
@@ -94,7 +101,7 @@ nav div {
 }
 
 nav div:hover {
-    background-color: rgba(38, 38, 38, 1);
+    background-color: rgb(173, 149, 104);
 }
 
 nav a {
@@ -140,17 +147,19 @@ section div {
 }
 
 section div:hover {
-    background-color: rgba(38, 38, 38, 0.4);
+    background-color: rgba(173, 149, 104, 0.4);
 }
 
 
 .flex2 {
+    position: relative;
+    left: 13%;
     width: 100%;
     display: flex;
     text-decoration: none;
     flex-direction: row;
     flex-wrap: wrap;
-    color:rgba(255, 119, 0, 1);
+    color:rgb(0, 69, 218);
 }
 
 .flex2 div {
@@ -167,7 +176,6 @@ section div:hover {
 
 
 #mediareel {
-    background-color:rgb(0, 0, 0);
     padding: 20px 0px;
     display: flex;
     flex-direction: row;
@@ -222,6 +230,7 @@ section div:hover {
     visibility: hidden;
     border: rgba(0, 0, 0, 0) thin solid;
     border-radius: 100%;
+    padding: 4px;
     transition: background-color 0.4s;
 }
 
@@ -242,5 +251,5 @@ section div:hover {
 
 #mediaIMGEx {
     text-align: center;
-    color:rgba(255, 119, 0, 1);
+    padding: 5px 0px;
 }
