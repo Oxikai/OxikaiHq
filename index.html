@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="IMG/OXLogo.png" rel="icon">
         <link href="CSS/main.css" rel="stylesheet">
         <title>Oxikai</title>
         <script src="Scripts/mediareel.js" defer></script>
+        <script src="Scripts/rgbtext.js" defer></script>
         <!--<script src="Scripts/rgbtext.js" defer></script>-->
     </head>
 
@@ -15,11 +17,11 @@
             <div style="display: none;" onclick="signUp('User123', '123', '456@gmail.com')"><p>Sign Up</p></div>
         </nav>
 
-        <h1 class="title">Welcome!</h1>
+        <h1 class="title text">Welcome!</h1>
 
         <main>
-            <p style="font-size: 1.25em;">I'm glad you made it to my site, 'tis a regular non-special site made by some guy with a bit of programming knowledge</p>
-            <h2 style="display: inline; position: relative; left:30%"> -- Enjoy</h3>
+            <p class="text" style="font-size: 1.25em;">I'm glad you made it to my site, 'tis a regular non-special site made by some guy with a bit of programming knowledge</p>
+            <h2 class="text" style="display: inline; position: relative; left:30%"> -- Enjoy</h3>
                 <br>
                 <br>
                 <br>
@@ -33,9 +35,9 @@
                 <br>
                 <br>
             
-            <h2 style="border-bottom:rgba(255, 119, 0, 1) thin solid;">About Me</h2>
-            <p>I was first interested in programming around fourth or fifth grade, I found a website which let you make a game based off some templates, and so began my journey into the world of 1s and 0s.</p>
-            <ul>
+            <h2 class="text" style="border-bottom:rgba(255, 119, 0, 1) thin solid;">About Me</h2>
+            <p class="text">I was first interested in programming around fourth or fifth grade, I found a website which let you make a game based off some templates, and so began my journey into the world of 1s and 0s.</p>
+            <ul class="text">
                 <li>I love programming</li>
                 <li>I love Brookies</li>
                 <li>I'm like, totally rad bro, like super tubular!</li>
@@ -76,7 +78,7 @@
             <br>
             <br>
 
-            <p>What are you still doing here? Go on, there's more of the website to explore you know... Well scince you're here, you might as well enjoy the media reel</p>
+            <p class="text">What are you still doing here? Go on, there's more of the website to explore you know... Well since you're here, you might as well enjoy the media reel</p>
             <div id="mediareel">
                 <img id="arrowLeft" src="IMG/arrow_left.png" width="50px" onclick="imgscroll((IMAGENUM -= 1))">
                 <div>
@@ -98,7 +100,7 @@
             </div>
         
 
-        <footer>
+        <footer class="text">
             <div>
                 <h4>Help</h4>
                 <a href="mailto: madnesslchaos@gmail.com">Email</a>
