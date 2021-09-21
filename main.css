@@ -1,19 +1,31 @@
 html {
-    background-color: black;
-    background-image: url(../IMG/code.png);
-    align-items: center;
+    /*background-color: rgb(212, 182, 126);*/
 }
 
 body {
+    margin: 0px;
     border: thin rgba(0, 0, 0, 0) solid;
-    border-radius: 30px;
-    background-color: black;
-    height: 100%;
-    width: 80%;
-    position: absolute;
-    left: 10%;
-    color:rgba(255, 119, 0, 1);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-image: linear-gradient(190deg, rgb(0, 0, 0), rgb(12, 12, 12), black, rgb(50, 50, 100), black, rgb(12, 12, 12), rgb(0, 0, 0));
+    /*color:linear-gradient(180deg, rgb(6, 221, 131), rgb(0, 160, 93));*/
+    color:rgb(0, 255, 170);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* animation: rgbBackground 10s infinite; */
+}
+
+@keyframes rgbBackground {
+    0% { background-image: linear-gradient(190deg, rgb(0, 0, 0), rgb(12, 12, 12), black, rgb(50, 50, 100), black, rgb(12, 12, 12), rgb(0, 0, 0))}
+    20% { background-image: linear-gradient(190deg, rgb(0, 0, 0), rgb(12, 12, 12), black, rgb(63, 63, 124), black, rgb(12, 12, 12), rgb(0, 0, 0))}
+    40% { background-image: linear-gradient(190deg, rgb(0, 0, 0), rgb(12, 12, 12), black, rgb(50, 50, 100), black, rgb(12, 12, 12), rgb(0, 0, 0))}
+    60% { background-image: linear-gradient(190deg, rgb(0, 0, 0), rgb(12, 12, 12), black, rgb(70, 70, 139), black, rgb(12, 12, 12), rgb(0, 0, 0))}
+    80% { background-image: linear-gradient(190deg, rgb(0, 0, 0), rgb(12, 12, 12), black, rgb(50, 50, 100), black, rgb(12, 12, 12), rgb(0, 0, 0))}
+}
+
+.gradienttext {
+    color: transparent;
+    background-image: linear-gradient(180deg, rgb(6, 221, 131), rgb(0, 160, 93));
+    background-clip: text;
 }
 
 main {
@@ -23,20 +35,22 @@ main {
 }
 
 
+#halve {
+    color: rgb(0, 68, 255);
+    margin: 0px;
+}
+
+
 footer {
-    background-color: rgb(0, 0, 0);
     padding: 0px 10px;
     display: flex;
-    position: relative;
-    bottom: 0%;
-    width: 100%;
-    border: thin rgba(0, 0, 0, 0) solid;
-    border-radius: 0px 0px 30px 30px;
+    border-width: 0px;
+    border-radius: 0px 20px 0px 20px;
     transition: background-color 0.5s;
 }
 
 footer:hover {
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(14, 14, 14);
 }
 
 footer div {
@@ -48,7 +62,7 @@ footer div {
 
 footer h4 {
     margin-top: 0px;
-    border-bottom:rgba(255, 119, 0, 1) thin solid;
+    border-bottom:rgba(0, 255, 0, 1) thin solid;
     padding: 2px 10px 10px 10px;
 }
 
@@ -66,7 +80,7 @@ footer a:hover {
 .title {
     text-align: center;
     font-size: 4em;
-    color: rgba(255, 119, 0, 1);
+    color: rgb(0, 255, 170);
 }
 
 
@@ -78,12 +92,12 @@ nav {
     width: 100%;
     border:rgba(0, 0, 0, 0) thin solid;
     border-radius: 30px;
-    background-color: rgb(0, 0, 0);
+    /*background-color: rgb(212, 182, 126);*/
 }
 
 .activeLink {
     text-decoration: overline;
-    text-decoration-color: rgba(255, 119, 0, 1);
+    text-decoration-color: rgba(255, 119, 170, 1);
 }
 
 nav ul {
@@ -91,7 +105,7 @@ nav ul {
 }
 
 nav div {
-    color: rgba(255, 119, 0, 1);
+    color: rgb(0, 255,150);
     width: 120px;
     background-color: rgba(38, 38, 38, 0);
     text-align: center;
@@ -102,7 +116,7 @@ nav div {
 }
 
 nav div:hover {
-    background-color: rgba(38, 38, 38, 1);
+    background-color: rgb(173, 149, 104);
 }
 
 nav a {
@@ -148,17 +162,19 @@ section div {
 }
 
 section div:hover {
-    background-color: rgba(38, 38, 38, 0.4);
+    background-color: rgba(173, 149, 104, 0.4);
 }
 
 
 .flex2 {
+    position: relative;
+    left: 13%;
     width: 100%;
     display: flex;
     text-decoration: none;
     flex-direction: row;
     flex-wrap: wrap;
-    color:rgba(255, 119, 0, 1);
+    color:rgb(0, 69, 218);
 }
 
 .flex2 div {
@@ -171,4 +187,100 @@ section div:hover {
 
 .flex2 div:hover {
     background-color: rgba(0, 0, 0, 0);
+}
+
+
+#mediareel {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    /*width: 125%;
+    position: relative;
+    right: 15%; */
+}
+#mediareel p {
+    padding-left: 5px;
+}
+
+#mediareel #ReelIMG {
+    cursor: pointer;
+    width: 400px;
+    height: 250px;
+}
+#cover {
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    position: relative;
+    top: 270px;
+    color: rgba(0, 0, 0, 0);
+    transition: all 0.2s
+}
+#cover:hover {
+    background-color: rgba(20, 20, 20, 0.4);
+    color: white;
+}
+#mediareel img.activeIMG {
+    border: rgb(252, 186, 3) 2px solid;
+}
+
+#XButton {
+    display: none;
+    transition: all 0.2s
+}
+
+#XButton:hover {
+    width: 55px;
+}
+
+#enlarged {
+    width: 0px;
+    height: 0px;
+    transition: all 0.2s;
+}
+
+#arrowLeft {
+    height: 50px;
+    position: relative;
+    bottom: 100px;
+    visibility: hidden;
+    border: rgba(0, 0, 0, 0) thin solid;
+    border-radius: 100%;
+    padding: 4px;
+    transition: background-color 0.4s;
+}
+
+#arrowRight {
+    height: 50px;
+    position: relative;
+    bottom: 100px;
+    background-color:rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0) thin solid;
+    border-radius: 100%;
+    padding: 4px;
+    transition: background-color 0.4s;
+}
+
+#arrowLeft:hover, #arrowRight:hover {
+    background-color: rgba(56, 56, 56, 0.8);
+}
+
+#mediaIMGEx {
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.text {
+    animation : cycle 20s linear infinite;
+}
+
+@keyframes cycle {
+    0% { color: rgb(255, 0, 0)}
+    20% {color: rgb(255, 127, 0)}
+    40% {color: rgb(250, 246, 0)}
+    60% {color: rgb(0, 255, 0)}
+    80% {color: rgb(0, 0, 255)}
+    100% {color: rgb(255, 0, 255)}
 }
