@@ -300,6 +300,27 @@ section div:hover {
     margin:auto;
 }
 
+button {
+    background-color: black;
+    color: rgb(66, 245, 144);
+    height: 20px;
+    margin: 15px 10px auto 10px;;
+    border: thin solid rgb(66, 245, 144);
+}
+
+button:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.signform {
+    display: none;
+    margin: auto;
+    background-color: black;
+    border: 3px solid rgb(66, 245, 144);
+    width: 400px;
+    text-align: center;
+}
+
 @keyframes cycle {
     0% { color: rgb(255, 0, 0)}
     20% {color: rgb(255, 127, 0)}
