@@ -282,7 +282,7 @@ section div:hover {
     padding: 5px 20px;
     border: rgb(66, 245, 144) thin solid;
     background-color: black;
-    grid: 200px / auto auto auto auto;
+    grid: auto / auto auto auto auto;
     grid-gap: 20px 5px;
 }
 
@@ -328,4 +328,54 @@ button:hover {
     60% {color: rgb(0, 255, 0)}
     80% {color: rgb(0, 0, 255)}
     100% {color: rgb(255, 0, 255)}
+}
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    nav, footer {
+        display: none;
+    }
+
+    #list {
+        border-color: black;
+        background-color: black;
+        margin: 0px;
+    }
+
+    #list p {
+        margin: 2px;
+        background-color: white;
+    }
+
+    #list img {
+        width: 100px;
+    }
+
+    #list a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .title {
+        color: black;
+    }
+
+    .print50 {
+        height: 100px;
+        width: 15px;
+    }
+
+    #pgbr {
+        margin-top: 200px;
+        page-break-after: always;
+    }
+
+    main {
+        left: 0%;
+        width: 100%;
+    }
 }
