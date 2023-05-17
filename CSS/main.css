@@ -1,13 +1,21 @@
 html {
     /*background-color: rgb(212, 182, 126);*/
+    background-image: url("../IMG/backgroundimage.jpg");
+}
+
+canvas {
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
 
 body {
+    overflow-x: hidden;
     margin: 0px;
     border: thin rgba(0, 0, 0, 0) solid;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    background-image: linear-gradient(190deg, rgb(0, 0, 0), rgb(12, 12, 12), black, rgb(50, 50, 100), black, rgb(12, 12, 12), rgb(0, 0, 0));
+    /*border-top-left-radius: 30px;
+    border-top-right-radius: 30px;*/
+    background-image: linear-gradient(190deg, rgba(0, 0, 0, 0.99), rgba(12, 12, 12, 0.99), black, rgba(17, 17, 17, 0.99));
     /*color:linear-gradient(180deg, rgb(6, 221, 131), rgb(0, 160, 93));*/
     color:rgb(0, 255, 170);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -22,6 +30,18 @@ body {
     80% { background-image: linear-gradient(190deg, rgb(0, 0, 0), rgb(12, 12, 12), black, rgb(50, 50, 100), black, rgb(12, 12, 12), rgb(0, 0, 0))}
 }
 
+a {
+    color: rgb(166, 11, 255);
+}
+
+a:visited {
+    color:rgb(0, 255, 0);
+}
+
+a:hover {
+    color: rgb(0, 162, 255);
+}
+
 .gradienttext {
     color: transparent;
     background-image: linear-gradient(180deg, rgb(6, 221, 131), rgb(0, 160, 93));
@@ -32,6 +52,7 @@ main {
     width: 70%;
     position: relative;
     left: 15%;
+    margin: 0px;
 }
 
 
@@ -75,6 +96,11 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+    color: rgba(255, 119, 0, 1)
+}
+
+footer a:visited {
+    color: rgba(255, 119, 0, 1);
 }
 
 .title {
@@ -272,8 +298,24 @@ section div:hover {
     padding: 5px 0px;
 }
 
+#profile {
+    display: grid;
+    margin: auto;
+    width: 40%;
+    min-width: 330px;
+    padding: 10px 20px;
+    grid-template-columns: 150px 100px auto;
+    grid-template-rows: 180px auto;
+    border: thin solid rgb(116, 116, 116);
+    border-radius: 30px;
+}
+
+#profile img {
+    border-radius: 50%;
+}
+
 .text {
-    animation : cycle 20s linear infinite;
+    animation: cycle 20s linear infinite;
 }
 
 #list {
@@ -284,6 +326,11 @@ section div:hover {
     background-color: black;
     grid: auto / auto auto auto auto;
     grid-gap: 20px 5px;
+}
+
+.centered {
+    display: block;
+    margin: 0px auto;
 }
 
 .list-title {
@@ -321,13 +368,65 @@ button:hover {
     text-align: center;
 }
 
+#services {
+    display: grid;
+    gap: 50px 25px;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 325px 325px;
+}
+
+.gradover {
+    position: relative;
+    top: -327px;
+    left: 0px;
+    animation: overlayReverse 0.2s;
+}
+
+.gradover:hover {
+    animation: eoverlay 0.2s;
+}
+
+@keyframes eoverlay {
+    0% {background-image: linear-gradient(135deg, rgba(70, 70, 70, 0.7), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));}
+    25% {background-image: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(70, 70, 70, 0.7), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));}
+    50% {background-image: linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0), rgba(70, 70, 70, 0.7), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));}
+    75% {background-image: linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(255, 255, 255, 0), rgba(70, 70, 70, 0.7), rgba(0, 0, 0, 0));}
+    100% {background-image: linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(255, 255, 255, 0), rgba(70, 70, 70, 0.7));}
+}
+
+@keyframes overlayReverse {
+    0% {background-image: linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(255, 255, 255, 0), rgba(70, 70, 70, 0.7));}
+    25% {background-image: linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(255, 255, 255, 0), rgba(70, 70, 70, 0.7), rgba(0, 0, 0, 0));}
+    50% {background-image: linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0), rgba(70, 70, 70, 0.7), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));}
+    75% {background-image: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(70, 70, 70, 0.7), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));}
+    100% {background-image: linear-gradient(135deg, rgba(70, 70, 70, 0.7), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));}
+}
+
 @keyframes cycle {
     0% { color: rgb(255, 0, 0)}
     20% {color: rgb(255, 127, 0)}
     40% {color: rgb(250, 246, 0)}
     60% {color: rgb(0, 255, 0)}
     80% {color: rgb(0, 0, 255)}
-    100% {color: rgb(255, 0, 255)}
+    90% {color: rgb(255, 0, 255)}
+    100% {color: rgb(255, 0, 0)}
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        overflow: visible;
+    }
+    main {
+        width: 70%;
+    }
+    #services {
+        width: 600px;
+        margin: 0px;
+        grid-template: 600px 600px 600px / 325px;
+    }
+    #profile {
+        width: auto
+    }
 }
 
 @media print {
