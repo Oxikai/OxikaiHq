@@ -44,6 +44,6 @@ function imgscroll(IMAGENUM) {
         document.getElementById("mediaIMGEx").innerText = 'The Evolution of Personalities program is underway!';
     }
 
-    document.getElementById("ReelIMG").outerHTML = `<img src="IMG/${IMAGENUM}.png" alt="Media Reel Image" id="ReelIMG">`;
+    document.getElementById("ReelIMG").outerHTML = `<img src="IMG/${IMAGENUM}.png" alt="Media Reel Image" id="ReelIMG" class="text">`;
     IMAGENUM = IMAGENUM;
 }
