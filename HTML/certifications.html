@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="IMG/pfp.png" rel="icon">
         <link href="../CSS/main.css" rel="stylesheet">
+        <script src="../Scripts/main.js" defer></script>
         <title>Oxikai</title>
     </head>
 
     <body>
         <nav>
             <a href="../index.html"><div><p>Home</p></div></a>
-            <a href="downloadibles.html" class="activeLink"><div><p>Downloadibles</p></div></a>
+            <a href="downloadibles.html"><div><p>Downloadibles</p></div></a>
             <div style="display: none;"><p>Sign In</p></div>
             <div style="display: none;" onclick="signUp('User123', '123', '456@gmail.com')"><p>Sign Up</p></div>
         </nav>
+
+        <div id="enIMG">
+            <img id="x" src="../IMG/XButton.png" width="50px" onclick="hideIMG()"><br>
+            <img class="centered" id="imgbig" src="">
+        </div>
 
         <h1 class="title">My Certifications</h1>
 
         <main>
             <section class="flex2">
                 <div>
-                    <img src="../IMG/Cert932154642165_IC3_.png" alt="IC3" width="100%">
+                    <img src="../IMG/Cert932154642165_IC3_.png" alt="IC3" width="100%" onclick="imgEnlarge(`${this.src}`)">
                     <p>IC3 Digital Literacy</p>
                 </div>
                 
                 <div>
-                    <img src="../IMG/Cert34115461537_MasterIC3_.png" alt="IC3 Master" width="100%">
+                    <img src="../IMG/Cert34115461537_MasterIC3_.png" alt="IC3 Master" width="100%" onclick="imgEnlarge(`${this.src}`)">
                     <p>IC3 Digital Literacy Master</p>
                 </div>
 
                 <div>
-                    <img src="../IMG/Cert574154443281_HTML_CSS_.png" alt="HTML & CSS" width="100%">
+                    <img src="../IMG/Cert574154443281_HTML_CSS_.png" alt="HTML & CSS" width="100%" onclick="imgEnlarge(`${this.src}`)">
                     <p>Introduction to HTML and CSS</p>
                 </div>
 
                 <div>
-                    <img src="../IMG/Cert701154347867_HTML5_.png" alt="HTML5" width="100%">
+                    <img src="../IMG/Cert701154347867_HTML5_.png" alt="HTML5" width="100%" onclick="imgEnlarge(`${this.src}`)">
                     <p>HTML5</p>
                 </div>
 
                 <div>
-                    <img src="../IMG/Cert11015451135_python_.png" alt="Python" width="100%">
+                    <img src="../IMG/Cert11015451135_python_.png" alt="Python" width="100%" onclick="imgEnlarge(`${this.src}`)">
                     <p>Indroduction to Python</p>
                 </div>
 
                 <div>
-                    <img src="../IMG/Cert51317111555_Javascript.jpg" alt="IC3 Master" width="100%">
+                    <img src="../IMG/Cert51317111555_Javascript.jpg" alt="IC3 Master" width="100%" onclick="imgEnlarge(`${this.src}`)">
                     <p>Introduction to Javascript</p>
                 </div>
 
                 <div>
-                    <img src="../IMG/Cert616154712729_Photoshop_.png" alt="IC3 Master" width="100%">
+                    <img src="../IMG/Cert616154712729_Photoshop_.png" alt="IC3 Master" width="100%" onclick="imgEnlarge(`${this.src}`)">
                     <p>Visual Design Using Photoshop</p>
                 </div>
 
                 <div>
-                    <img src="../IMG/emojicodecert.jpg" alt="EmojiCode Cert" width="100%">
+                    <img src="../IMG/emojicodecert.jpg" alt="EmojiCode Cert" width="100%" onclick="imgEnlarge(`${this.src}`)">
                     <p>EmojiCode</p>
                 </div>
 
                 <div>
-                    <img src="../IMG/typescriptcert.jpg" alt="Typescript cert" width="100%">
+                    <img src="../IMG/typescriptcert.jpg" alt="Typescript cert" width="100%" onclick="imgEnlarge(`${this.src}`)">
                     <p>Typescript</p>
                 </div>
 
                 <div>
-                    <img src="../IMG/asp.netcert.jpg" alt="Asp.net cert" width="100%">
+                    <img src="../IMG/asp.netcert.jpg" alt="Asp.net cert" width="100%" onclick="imgEnlarge(`${this.src}`)">
                     <p>Asp.net</p>
                 </div>
             </section>

@@ -7,9 +7,15 @@
 
     <body class="text">
         <nav>
-            <a href="../index.html"><div class="activeLink"><p>Home</p></div></a>
+            <a href="../index.html"><div><p>Home</p></div></a>
             <a href="downloadibles.html"><div><p>Downloadibles</p></div></a>
+
         <h1 class="title">Welcome!</h1>
+
+        <div id="enIMG">
+            <img id="x" src="../IMG/XButton.png" width="50px" onclick="hideIMG()"><br>
+            <img class="centered" id="imgbig" src="">
+        </div>
 
         <main>
             <h1>3D Printing Services</h1>
@@ -17,9 +23,19 @@
             <p>Current build volumes:</p>
             <p>- Resin: 9.6" x 7.8" x 4.8"</p>
             <p>- Filiment: 8.7" x 8.7" x 9.8"</p>
+
+            <br>
+            <h2>Gallery of *Some* of My Work</h2>
+            <section class="gallery">
+                <script src="../Scripts/main.js">scrollMedia(printList, 0, 'printList')</script>
+                <img class="arrow" src="../IMG/arrow_left.png" width="50px" onclick="scrollMedia(printList, -1, 'printList')">
+                <img class="arrow" src="../IMG/arrow_right.png" width="50px" onclick="scrollMedia(printList, 1, 'printList')">
+                <img id="printList" class="gallIMG" src="../IMG/resin-axolotl.jpg" onclick="imgEnlarge(`${this.src}`)">
+            </section>
         </main>
 
         <br>
+
 
         <div id="halve"></div>
         <br>

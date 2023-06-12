@@ -90,6 +90,7 @@ footer {
     border-width: 0px;
     border-radius: 0px 20px 0px 20px;
     transition: background-color 0.5s;
+    cursor: url("../IMG/oxcursor"), default;
 }
 
 footer:hover {
@@ -114,6 +115,7 @@ footer a {
     font-size: 10px;
     color:rgba(255, 119, 0, 1);
     text-decoration: none;
+    cursor: url("../IMG/oxpointer.png"), pointer;
 }
 
 footer a:hover {
@@ -232,6 +234,7 @@ section div:hover {
     padding: 15px;
     border:rgba(0, 0, 0, 0) thin solid;
     border-radius: 15px;
+    cursor: url("../IMG/oxpointer.png"), pointer;
 }
 
 .flex2 div:hover {
@@ -403,6 +406,61 @@ button:hover {
     grid-template-rows: 325px 325px;
 }
 
+#enIMG {
+    z-index: 1;
+    display: none;
+    cursor: url("../IMG/oxcursor.png"), default;
+    position: sticky;
+    top: 50px;
+    background-color: rgba(129, 129, 129, 0.4);
+    height: 900px;
+    width: 100%;
+    padding: 20px;
+}
+
+#enIMG img {
+    cursor: url("../IMG/oxpointer.png"), pointer;
+    position: relative;
+}
+
+#imgbig {
+    height: 90%;
+    cursor: url("../IMG/oxcursor.png"), default;
+}
+
+.arrow {
+    margin: 0px 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 4px;
+}
+
+.gallery {
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+    border: 2px solid rgb(216, 219, 23);
+    transition: background-color 0.2s;
+}
+
+.gallery:hover {
+    background-color: rgba(173, 149, 104, 0.4);
+}
+
+.gallery .arrow:hover {
+    background-color: rgba(129, 129, 129, 0.4);
+    cursor: url("../IMG/oxpointer.png"), pointer;
+}
+
+.gallIMG {
+    display: block;
+    margin: auto;
+    height: 580px;
+    border-radius: 0%;
+    max-width: 100%;
+    cursor: url("../IMG/oxpointer.png"), pointer;
+}
+
 .gradover {
     position: relative;
     top: -327px;
@@ -440,7 +498,7 @@ button:hover {
     100% {color: rgb(255, 0, 0)}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     body {
         overflow: visible;
     }
@@ -454,6 +512,15 @@ button:hover {
     }
     #profile {
         width: auto
+    }
+    p {
+        font-size: 18pt;
+    }
+    footer{
+        font-size: 20pt;
+    }
+    footer a {
+        font-size: 14pt;
     }
 }
 
@@ -505,4 +572,7 @@ button:hover {
         left: 0%;
         width: 100%;
     }
+    /*#enIMG, #enIMG img {
+        display: none;
+    }*/
 }

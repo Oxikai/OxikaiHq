@@ -10,16 +10,6 @@ function closeEnlarge() {
     document.getElementById("enlarged").style = "background-color: rgba(100, 100, 100, 0); position: fixed; left:0%; top:23%;";
 }
 
-function imgscrollLeft(IMAGENUM) {
-    IMAGENUM -= 1;
-    imgscroll(IMAGENUM);
-}
-
-function imgscrollRight(IMAGENUM) {
-    IMAGENUM += 1;
-    imgscroll(IMAGENUM);
-}
-
 function imgscroll(IMAGENUM) {
     console.log(IMAGENUM);
     if(IMAGENUM > 2) {
