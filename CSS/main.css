@@ -404,7 +404,16 @@ button:hover {
     gap: 50px 25px;
     grid-template-columns: 600px 600px;
     grid-template-rows: 325px 325px;
-    //filter: blur(10px);
+}
+
+#services div {
+    background-color: rgba(99, 99, 99, 0.3);
+    z-index: 1;
+    position: relative;
+    right: 10px;
+    bottom: 25px;
+    width: 1250px;
+    height: 750px;
 }
 
 #services a {
@@ -514,6 +523,10 @@ button:hover {
         width: 600px;
         margin: 0px;
         grid-template: 600px 600px 600px / 325px;
+    }
+    #services div {
+        width: 620px;
+        height: 2606px;
     }
     #profile {
         width: auto
